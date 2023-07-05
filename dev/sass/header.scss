@@ -33,41 +33,26 @@ header {
 				line-height: 1.5;
 				padding-top: $pading;
 				padding-bottom: $pading;
-				&:not(.active) {
-					&:hover {
-						&::before {
-							color: #fefefe;
-							height: 3px;
-							opacity: 1;
-							bottom: 10px;
-							transition: 0.5s;
-						}
-					}
+				transition: 0.5s;
+				&:hover {
 					&::before {
-						content: "";
-						position: absolute;
-						bottom: 0;
-						height: 5px;
-						left: 0;
-						width: 100%;
-						opacity: 0;
-						background-color: #fefefe;
+						color: #fefefe;
+						height: 3px;
+						opacity: 1;
+						bottom: 10px;
 						transition: 0.5s;
 					}
 				}
-				&.active {
-					color: #ee3b24;
-					text-shadow: 0 0 1px #ee3b24;
-					&::before {
-						content: "";
-						position: absolute;
-						bottom: 10px;
-						height: 5px;
-						left: 0;
-						width: 100%;
-						background-color: #ee3b24;
-						transition: 0.5s;
-					}
+				&::before {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					height: 5px;
+					left: 0;
+					width: 100%;
+					opacity: 0;
+					background-color: #fefefe;
+					transition: 0.5s;
 				}
 			}
 		}
@@ -78,6 +63,21 @@ header {
 			right: 0;
 			padding: 0;
 			background-color: #010101d9;
+			.nav-item {
+				&.active {
+					.nav-link {
+						color: #ee3b24;
+						text-shadow: 0 0 1px #ee3b24;
+						&::before {
+							height: 3px;
+							opacity: 1;
+							bottom: 10px;
+							transition: 0.5s;
+							background-color: #ee3b24;
+						}
+					}
+				}
+			}
 		}
 	}
 }

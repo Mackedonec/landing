@@ -1,7 +1,6 @@
-$(document).ready(function () {
+(function ($) {
 	let $navbar = $("#header-navbar");
 	let $btnBack2Top = $("#back2top");
-	let $navbarLink = $(".nav-link");
 
 	/* кнопка возврата в начало страницы */
 	const back2TopOffset = 700;
@@ -29,44 +28,32 @@ $(document).ready(function () {
 	const headerScrollTrigger = 100;
 
 	$(window).on("scroll", () => {
-		const scrollTop = $(window).scrollTop();
 		$(window).scrollTop() > headerScrollTrigger
 			? $navbar.addClass(headerClassOnScroll)
 			: $navbar.removeClass(headerClassOnScroll);
-		back2Top(scrollTop);
-
-		// Додавання/видалення класу "active" для навігаційних посилань при прокрутці між секціями
-		$navbarLink.each(function () {
-			const sectionId = $(this).attr("href");
-			if (sectionId !== "#" && $(sectionId).length > 0) {
-				const sectionOffset = $(sectionId).offset().top;
-				const sectionHeight = $(sectionId).outerHeight();
-
-				if (
-					scrollTop >= sectionOffset - headerScrollTrigger &&
-					scrollTop < sectionOffset + sectionHeight
-				) {
-					$(this).addClass("active");
-				} else {
-					$(this).removeClass("active");
-				}
-			}
-		});
+		back2Top($(window).scrollTop());
 	});
 	/* добавление класса-модификатора в меню на скрол */
 
+	/* подключение и настройка внутристраничной навигации */
+	$navbar.onePageNav({
+		currentClass: "active",
+		scrollSpeed: 750,
+		easing: "swing",
+		filter: ":not(.navbar-brand)",
+	});
+	/* подключение и настройка внутристраничной навигации */
+
 	/* закрытие меню при клике */
 	let windowWidth = $(window).width();
-	let $navbarToggler = $(".navbar-toggler");
-	let $headerNavbarCollapse = $("#header-navbar-collapse");
 
 	$(window).on("resize", () => (windowWidth = $(window).width()));
 
-	$navbarLink.on("click", function () {
-		// Додавання класу "active" для навігаційного посилання при кліку
-		$navbarLink.removeClass("active");
-		$(this).addClass("active");
+	let $navbarLink = $("#header-navbar-collapse a");
+	let $navbarToggler = $(".navbar-toggler");
+	let $headerNavbarCollapse = $("#header-navbar-collapse");
 
+	$navbarLink.on("click", () => {
 		if (windowWidth < 992) {
 			$navbarToggler.addClass("collapsed");
 			$headerNavbarCollapse.removeClass("show");
@@ -74,9 +61,11 @@ $(document).ready(function () {
 	});
 	/* закрытие меню при клике */
 
+	/* подключение и настрока плагина анимации */
 	AOS.init({
 		disable: "mobile",
 		duration: 600,
 		easing: "ease-in-sine",
 	});
-});
+	/* подключение и настрока плагина анимации */
+})(jQuery);
