@@ -1,6 +1,5 @@
 section {
 	.carousel {
-		position: relative;
 		.carousel-inner {
 			.carousel-item {
 				height: 100vh;
@@ -30,8 +29,11 @@ section {
 					opacity: 0.2;
 				}
 				.carousel-caption {
-					h5 {
+					h1 {
+						color: #fefefe;
 						font-size: 1.75rem;
+						font-weight: 500;
+						line-height: 1.2;
 					}
 				}
 			}

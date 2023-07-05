@@ -1,6 +1,16 @@
 body {
+	font-size: $font-size;
 	font-family: $font-primary;
 	section {
 		min-height: 100vh;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #010101;
+		font-family: $font-secondary;
 	}
 }
