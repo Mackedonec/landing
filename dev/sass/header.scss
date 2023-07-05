@@ -3,11 +3,12 @@ header {
 		z-index: 1;
 		padding-top: $pading;
 		padding-bottom: $pading;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
 		background-color: transparent;
+
 		.container {
 			max-width: 1140px;
 			.navbar-brand {
@@ -54,9 +55,27 @@ header {
 						transition: 0.5s;
 					}
 				}
+				&.active {
+					color: #ee3b24;
+					text-shadow: 0 0 1px #ee3b24;
+					&::before {
+						content: "";
+						position: absolute;
+						bottom: 10px;
+						height: 5px;
+						left: 0;
+						width: 100%;
+						background-color: #ee3b24;
+						transition: 0.5s;
+					}
+				}
 			}
 		}
-		.header-navbar--scrolled {
+		&.header-navbar--scrolled {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
 			padding: 0;
 			background-color: #010101d9;
 		}
