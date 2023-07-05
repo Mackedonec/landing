@@ -1,0 +1,35 @@
+header {
+	font-family: $font-primary;
+	.navbar {
+		padding-top: $pading;
+		padding-bottom: $pading;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: transparent;
+		.container {
+			max-width: 1140px;
+			.navbar-brand {
+				padding-top: $pading;
+				padding-bottom: $pading;
+			}
+			.navbar-collapse {
+				justify-content: flex-end;
+			}
+		}
+		.nav-item {
+			padding-left: calc($pading / 2);
+			padding-right: calc($pading / 2);
+			.nav-link {
+				padding-left: calc($pading / 2);
+				padding-right: calc($pading / 2);
+				font-size: $font-size;
+				font-weight: 400;
+				line-height: 1.5;
+				padding-top: $pading;
+				padding-bottom: $pading;
+			}
+		}
+	}
+}
