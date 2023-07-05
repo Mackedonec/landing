@@ -1,6 +1,6 @@
 header {
-	font-family: $font-primary;
 	.navbar {
+		z-index: 1;
 		padding-top: $pading;
 		padding-bottom: $pading;
 		position: absolute;
@@ -11,8 +11,9 @@ header {
 		.container {
 			max-width: 1140px;
 			.navbar-brand {
-				padding-top: $pading;
-				padding-bottom: $pading;
+				color: #ffffff;
+				padding-top: calc($pading / 3);
+				padding-bottom: calc($pading / 3);
 			}
 			.navbar-collapse {
 				justify-content: flex-end;
@@ -22,6 +23,7 @@ header {
 			padding-left: calc($pading / 2);
 			padding-right: calc($pading / 2);
 			.nav-link {
+				color: #ffffff;
 				padding-left: calc($pading / 2);
 				padding-right: calc($pading / 2);
 				font-size: $font-size;
@@ -30,6 +32,10 @@ header {
 				padding-top: $pading;
 				padding-bottom: $pading;
 			}
+		}
+		.header-navbar--scrolled {
+			padding: 0;
+			background-color: #010101d9;
 		}
 	}
 }
