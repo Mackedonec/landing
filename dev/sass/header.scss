@@ -1,6 +1,7 @@
 header {
 	.navbar-expand-lg {
 		transition: background-color 1.5s, padding 1.25s;
+		background-color: transparent;
 		z-index: 1;
 		padding-top: $pading;
 		padding-bottom: $pading;
@@ -15,7 +16,6 @@ header {
 				padding-top: calc($pading / 3);
 				padding-bottom: calc($pading / 3);
 			}
-
 			.navbar-collapse {
 				justify-content: flex-end;
 			}
@@ -87,6 +87,5 @@ header {
 	.navbar-toggler {
 		background-color: #ffffff4b;
 		border: 2px solid #ffffffd5;
-		margin-right: 150px;
 	}
 }
