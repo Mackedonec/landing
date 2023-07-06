@@ -1,3 +1,17 @@
+const toggler = document.querySelector(".navbar-toggler");
+const collaps = document.querySelector(".navbar-collapse");
+
+window.addEventListener("resize", function () {
+	if (window.innerWidth > 992) {
+		if (collaps.classList.contains("show")) {
+			collaps.classList.remove("show");
+		}
+
+		toggler.setAttribute("aria-expanded", "false");
+		toggler.classList.add("collapsed");
+	}
+});
+
 (function ($) {
 	let $navbar = $("#header-navbar");
 	let $btnBack2Top = $("#back2top");
@@ -38,28 +52,11 @@
 	/* подключение и настройка внутристраничной навигации */
 	$navbar.onePageNav({
 		currentClass: "active",
-		scrollSpeed: 50,
+		scrollSpeed: 150,
 		easing: "swing",
 		filter: ":not(.navbar-brand)",
 	});
 	/* подключение и настройка внутристраничной навигации */
-
-	/* закрытие меню при клике */
-	let windowWidth = $(window).width();
-
-	$(window).on("resize", () => (windowWidth = $(window).width()));
-
-	let $navbarLink = $("#header-navbar-collapse a");
-	let $navbarToggler = $(".navbar-toggler");
-	let $headerNavbarCollapse = $("#header-navbar-collapse");
-
-	$navbarLink.on("click", () => {
-		if (windowWidth < 992) {
-			$navbarToggler.addClass("collapsed");
-			$headerNavbarCollapse.removeClass("show");
-		}
-	});
-	/* закрытие меню при клике */
 
 	/* подключение и настрока плагина анимации */
 	AOS.init({

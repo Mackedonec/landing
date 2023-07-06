@@ -1,3 +1,48 @@
 .features {
-	background-color: #a71f1f;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #e5e5e5;
+	.container {
+		.features-title {
+			text-align: center;
+			margin: 0 0 45px;
+		}
+		.features-descript {
+			text-align: center;
+			margin: 0 0 45px;
+		}
+
+		.feature {
+			.feature-img {
+				.fas,
+				.fab {
+					display: flex;
+					width: 80px;
+					height: 90px;
+					margin: 30px auto 60px;
+					color: #ffffff;
+					background: #ee3b24;
+					font-size: 2rem;
+					align-items: center;
+					justify-content: center;
+					clip-path: polygon(
+						50% 0%,
+						100% 25%,
+						100% 75%,
+						50% 100%,
+						0% 75%,
+						0% 25%
+					);
+				}
+			}
+			.feature-title {
+				text-align: center;
+				margin: 0 0 8px;
+			}
+			.feature-descript {
+				text-align: center;
+			}
+		}
+	}
 }
