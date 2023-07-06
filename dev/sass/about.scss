@@ -12,6 +12,7 @@
 			}
 		}
 		.progress-box {
+			max-width: 500px;
 			margin-left: auto;
 			.progress-title {
 				font-weight: 400;
@@ -20,7 +21,7 @@
 				margin-bottom: 8px;
 			}
 			.progress {
-				width: 455px;
+				max-width: 455px;
 				height: 20px;
 				margin-bottom: 30px;
 				.progress-bar {
