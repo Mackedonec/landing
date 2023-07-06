@@ -82,10 +82,11 @@ header {
 	}
 	.navbar-nav {
 		display: flex;
-		align-items: flex-end;
-		margin-right: 100px;
+		align-items: center;
 	}
 	.navbar-toggler {
+		background-color: #ffffff4b;
+		border: 2px solid #ffffffd5;
 		margin-right: 150px;
 	}
 }

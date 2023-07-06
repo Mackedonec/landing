@@ -18,7 +18,7 @@ window.addEventListener("resize", function () {
 
 	/* кнопка возврата в начало страницы */
 	const back2TopOffset = 700;
-	const back2TopAnimationDuration = 500;
+	const back2TopAnimationDuration = 200;
 	const back2TopAnimationFunction = "swing";
 	const back2Top = (pos) =>
 		pos >= back2TopOffset
