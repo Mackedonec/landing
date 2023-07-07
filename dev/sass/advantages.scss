@@ -1,0 +1,48 @@
+.advantages {
+  overflow: hidden;
+  width: 100%;
+  background-color: #d8d8d8;
+
+  &__img {
+    background-image: url(assets/img/background.jpg);
+    min-height: 100vh;
+    background-position: 33% 50%;
+    background-size: cover;
+  }
+  &__content {
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    > .row {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+  &__title,
+  &__descript {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .advantages-item {
+    display: flex;
+    &__icon {
+      padding-right: 15px;
+      flex-grow: 0;
+      i {
+        width: 60px;
+        margin-top: 7.5px;
+        text-align: center;
+        font-size: 2.75rem;
+        color: #ee3b24;
+      }
+    }
+    &__caption {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}

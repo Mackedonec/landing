@@ -1,4 +1,14 @@
 @media screen and (max-width: 991px) {
+  .blog,
+  .about,
+  .gallery,
+  .features {
+    .container {
+      padding-top: 90px;
+      padding-bottom: 60px;
+      max-width: 720px;
+    }
+  }
   header {
     .navbar-expand-lg {
       .nav-item {
@@ -25,14 +35,14 @@
       }
     }
   }
-  .blog,
-  .about,
-  .gallery,
-  .features {
-    .container {
-      padding-top: 90px;
-      padding-bottom: 60px;
+  .advantages {
+    .container-fluid {
+      padding-top: 105px;
+      padding-bottom: 75px;
       max-width: 720px;
+    }
+    &__img {
+      display: none;
     }
   }
 }
