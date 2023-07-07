@@ -1,34 +1,94 @@
-footer {
-	.back2top {
-		position: fixed;
-		right: 15px;
-		bottom: 15px;
-		display: none;
-		width: 45px;
-		height: 45px;
-		transition: 0.5s;
-		opacity: 0.2;
-		border-bottom: none;
-		border-radius: 4px;
-		background-color: #010101;
-		i {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			&.fas {
-				font-size: 1.5rem;
-				font-weight: 900;
-				color: #ffffff;
-			}
-		}
-		&:hover {
-			transition: 0.5s;
-			opacity: 0.9;
-			background-color: #ee3b24;
-			i {
-				top: 40%;
-			}
-		}
-	}
+.footer {
+  background-color: #343434;
+  &__top {
+    padding: 45px 0 30px;
+    color: #b2b2b2;
+    background-color: #282828;
+  }
+  &__title-one,
+  &__title {
+    color: #b2b2b2;
+    &::first-letter {
+      color: #ee3b24;
+    }
+  }
+  &__descript {
+    font-size: 14px;
+  }
+  .ul {
+    list-style: none;
+    .li {
+      &::before {
+        transition: 0.5s;
+        position: absolute;
+        margin-left: -25px;
+        content: "\f30b";
+        color: #b2b2b2;
+        font-size: 14px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+      }
+      a {
+        transition: 0.5s;
+        font-size: 14px;
+        color: #b2b2b2;
+        text-decoration: none;
+      }
+      &:hover {
+        &::before {
+          transition: 0.5s;
+          margin-left: -20px;
+          color: #ee3b24;
+        }
+        a {
+          transition: 0.5s;
+          color: #ee3b24;
+        }
+      }
+    }
+  }
+  .dropdown {
+    button {
+      display: none;
+    }
+  }
+
+  &__bottom {
+    color: #b2b2b2;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 auto;
+  }
+  .back2top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    width: 45px;
+    height: 45px;
+    transition: 0.5s;
+    opacity: 0.2;
+    border-bottom: none;
+    border-radius: 4px;
+    background-color: #010101;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &.fas {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #ffffff;
+      }
+    }
+    &:hover {
+      transition: 0.5s;
+      opacity: 0.9;
+      background-color: #ee3b24;
+      i {
+        top: 40%;
+      }
+    }
+  }
 }
