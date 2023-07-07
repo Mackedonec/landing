@@ -1,3 +1,21 @@
 @media screen and (max-width: 767px) {
-
+  .blog,
+  .about,
+  .features {
+    .container {
+      max-width: 540px;
+    }
+  }
+  .blog {
+    .container {
+      .blog-item {
+        &__img {
+          img {
+            margin-top: -10%;
+            margin-bottom: -35%;
+          }
+        }
+      }
+    }
+  }
 }

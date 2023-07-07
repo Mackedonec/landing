@@ -1,91 +1,92 @@
 header {
-	.navbar-expand-lg {
-		transition: background-color 1.5s, padding 1.25s;
-		background-color: transparent;
-		z-index: 1;
-		padding-top: $pading;
-		padding-bottom: $pading;
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		.container-fluid {
-			max-width: 1140px;
-			.navbar-brand {
-				color: #ffffff;
-				padding-top: calc($pading / 3);
-				padding-bottom: calc($pading / 3);
-			}
-			.navbar-collapse {
-				justify-content: flex-end;
-			}
-		}
-		.nav-item {
-			padding-left: calc($pading / 2);
-			padding-right: calc($pading / 2);
-			.nav-link {
-				transition: 2s;
-				position: relative;
-				overflow: hidden;
-				color: #ffffff;
-				padding-left: calc($pading / 2);
-				padding-right: calc($pading / 2);
-				font-size: $font-size;
-				font-weight: 400;
-				line-height: 1.5;
-				padding-top: $pading;
-				padding-bottom: $pading;
-				&::before {
-					content: "";
-					position: absolute;
-					bottom: 0;
-					height: 5px;
-					left: 0;
-					width: 100%;
-					opacity: 0;
-					background-color: #ee3b24;
-				}
-			}
-			&.active {
-				.nav-link {
-					color: #ee3b24;
-					text-shadow: 0 0 1px #ee3b24;
-					&::before {
-						transition: opacity 2s;
-						height: 3px;
-						opacity: 1;
-						bottom: 10px;
-					}
-				}
-			}
+  .navbar-expand-lg {
+    transition: background-color 1.5s, padding 1.25s;
+    background-color: transparent;
+    z-index: 1;
+    padding-top: $pading;
+    padding-bottom: $pading;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    .container-fluid {
+      max-width: 1140px;
+      .navbar-brand {
+        color: #ffffff;
+        padding-top: calc($pading / 3);
+        padding-bottom: calc($pading / 3);
+      }
+      .navbar-collapse {
+        justify-content: flex-end;
+      }
+    }
+    .nav-item {
+      padding-left: calc($pading / 2);
+      padding-right: calc($pading / 2);
+      .nav-link {
+        transition: 2s;
+        position: relative;
+        overflow: hidden;
+        color: #ffffff;
+        padding-left: calc($pading / 2);
+        padding-right: calc($pading / 2);
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 1.5;
+        padding-top: $pading;
+        padding-bottom: $pading;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          height: 5px;
+          left: 0;
+          width: 100%;
+          opacity: 0;
+          background-color: #ee3b24;
+        }
+      }
+      &.active {
+        .nav-link {
+          color: #ee3b24;
+          text-shadow: 0 0 1px #ee3b24;
+          &::before {
+            transition: opacity 2s;
+            height: 3px;
+            opacity: 1;
+            bottom: 10px;
+          }
+        }
+      }
 
-			&:not(.active) {
-				.nav-link {
-					&:hover {
-						&::before {
-							height: 3px;
-							opacity: 1;
-							bottom: 10px;
-						}
-					}
-				}
-			}
-		}
-		&.header-navbar--scrolled {
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			padding: 0;
-			background-color: #010101d9;
-		}
-	}
-	.navbar-nav {
-		display: flex;
-		align-items: center;
-	}
-	.navbar-toggler {
-		background-color: #ffffff4b;
-		border: 2px solid #ffffffd5;
-	}
+      &:not(.active) {
+        .nav-link {
+          &:hover {
+            &::before {
+              height: 3px;
+              opacity: 1;
+              bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    &.header-navbar--scrolled {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0;
+      background-color: #010101d9;
+    }
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-toggler {
+    margin: 5px;
+    background-color: #ffffff4b;
+    border: 2px solid #ffffffd5;
+  }
 }

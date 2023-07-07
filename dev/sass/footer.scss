@@ -17,14 +17,18 @@ footer {
 			left: 50%;
 			transform: translate(-50%, -50%);
 			&.fas {
-				font-size: 30px;
+				font-size: 1.5rem;
 				font-weight: 900;
 				color: #ffffff;
 			}
 		}
 		&:hover {
 			transition: 0.5s;
-			opacity: 0.5;
+			opacity: 0.9;
+			background-color: #ee3b24;
+			i {
+				top: 40%;
+			}
 		}
 	}
 }
