@@ -21,10 +21,10 @@ window.addEventListener("resize", function () {
 });
 
 function addClasses() {
-  let ulElements = document.getElementsByTagName("ul");
+  let ulElements = document.getElementsByClassName("ul");
   for (let i = 0; i < ulElements.length; i++) {
     ulElements[i].classList.add("dropdown-menu");
-    let liElements = ulElements[i].getElementsByTagName("li");
+    let liElements = ulElements[i].getElementsByClassName("li");
     for (let j = 0; j < liElements.length; j++) {
       liElements[j].classList.add("dropdown-item");
     }
@@ -32,10 +32,10 @@ function addClasses() {
 }
 
 function removeClasses() {
-  let ulElements = document.getElementsByTagName("ul");
+  let ulElements = document.getElementsByClassName("ul");
   for (let i = 0; i < ulElements.length; i++) {
     ulElements[i].classList.remove("dropdown-menu");
-    let liElements = ulElements[i].getElementsByTagName("li");
+    let liElements = ulElements[i].getElementsByClassName("li");
     for (let j = 0; j < liElements.length; j++) {
       liElements[j].classList.remove("dropdown-item");
     }
