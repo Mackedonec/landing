@@ -15,37 +15,28 @@ window.addEventListener("resize", function () {
 window.addEventListener("resize", function () {
   if (window.innerWidth < 575) {
     addClasses();
-  }
-});
-
-// Перевірка розміру екрана при зміні розміру вікна
-window.addEventListener("resize", function () {
-  if (window.innerWidth < 575) {
-    addClasses();
   } else {
     removeClasses();
   }
 });
 
-// Функція для додавання класів до елементів
 function addClasses() {
-  var ulElements = document.getElementsByTagName("ul");
-  for (var i = 0; i < ulElements.length; i++) {
+  let ulElements = document.getElementsByTagName("ul");
+  for (let i = 0; i < ulElements.length; i++) {
     ulElements[i].classList.add("dropdown-menu");
-    var liElements = ulElements[i].getElementsByTagName("li");
-    for (var j = 0; j < liElements.length; j++) {
+    let liElements = ulElements[i].getElementsByTagName("li");
+    for (let j = 0; j < liElements.length; j++) {
       liElements[j].classList.add("dropdown-item");
     }
   }
 }
 
-// Функція для видалення класів з елементів
 function removeClasses() {
-  var ulElements = document.getElementsByTagName("ul");
-  for (var i = 0; i < ulElements.length; i++) {
+  let ulElements = document.getElementsByTagName("ul");
+  for (let i = 0; i < ulElements.length; i++) {
     ulElements[i].classList.remove("dropdown-menu");
-    var liElements = ulElements[i].getElementsByTagName("li");
-    for (var j = 0; j < liElements.length; j++) {
+    let liElements = ulElements[i].getElementsByTagName("li");
+    for (let j = 0; j < liElements.length; j++) {
       liElements[j].classList.remove("dropdown-item");
     }
   }
