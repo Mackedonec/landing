@@ -1,2 +1,2 @@
 Це dev.
-Bild знаходиться тут
+Bild знаходиться тут : https://github.com/Mackedonec/landing-bild
