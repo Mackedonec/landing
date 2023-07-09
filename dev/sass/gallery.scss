@@ -5,11 +5,11 @@
   align-content: center;
   .container {
     .gallery-title {
-      text-align: center;
+      @include text-center;
       margin-bottom: $gap-lg;
     }
     .gallery-descript {
-      text-align: center;
+      @include text-center;
       margin-bottom: $gap-lg;
     }
   }
@@ -37,7 +37,7 @@
         bottom: 0;
         left: 0;
         transition: opacity 0.5s;
-        text-align: center;
+        @include text-center;
         opacity: 0;
         background-color: #010101bf;
       }

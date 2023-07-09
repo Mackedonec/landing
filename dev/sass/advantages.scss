@@ -2,11 +2,18 @@
   overflow: hidden;
   width: 100%;
   background-color: #d8d8d8;
+  &:hover {
+    .advantages__img {
+      transition: 0.5s;
+      filter: saturate(1.15);
+    }
+  }
   &__img {
     background-image: url(assets/img/background.jpg);
     min-height: 100vh;
     background-position: 33% 50%;
     background-size: cover;
+    filter: saturate(0.65);
   }
   &__content {
     min-height: 100vh;
@@ -22,18 +29,27 @@
   &__descript {
     padding-left: $gap;
     padding-right: $gap;
-    text-align: center;
+    @include text-center;
     margin-bottom: $gap-lg;
   }
   .advantages-item {
     display: flex;
+    &:hover {
+      .advantages-item__icon {
+        i {
+          transition: 0.5s;
+          padding-left: 25px;
+        }
+      }
+    }
     &__icon {
       padding-right: $gap;
       flex-grow: 0;
       i {
+        transition: 0.5s;
         width: calc($gap * 4);
         margin-top: calc($gap / 2);
-        text-align: center;
+        @include text-center;
         font-size: 2.75rem;
         color: $primary-color;
       }

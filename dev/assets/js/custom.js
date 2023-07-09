@@ -13,13 +13,8 @@ window.addEventListener("resize", function () {
 });
 
 window.addEventListener("resize", function () {
-  if (window.innerWidth === 575) {
-    location.reload();
-  }
-  if (window.innerWidth === 600) {
-    location.reload();
-  }
-  if (window.innerWidth === 625) {
+  var dropdownMenu = document.querySelector("button.show");
+  if (dropdownMenu && window.innerWidth >= 575) {
     location.reload();
   }
 });
@@ -29,7 +24,7 @@ window.addEventListener("resize", function () {
 });
 
 function updateClasses() {
-  if (window.innerWidth < 575) {
+  if (window.innerWidth < 577) {
     addClasses();
   } else {
     removeClasses();

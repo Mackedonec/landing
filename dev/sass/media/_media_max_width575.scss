@@ -14,10 +14,10 @@
       padding: $gap-lg 0 calc($gap * 2);
     }
     &__title-one {
-      text-align: center;
+      @include text-center;
     }
     &__title {
-      display: none;
+      @include visually-hidden;
     }
     .dropdown-toggle {
       margin: 0 auto;
@@ -37,11 +37,13 @@
       }
     }
     .dropdown-menu {
+      padding: 0;
       background-color: #282828;
+      border: none;
     }
     .dropdown-item {
       &.li {
-        margin-left: 50px;
+        margin-left: calc($gap * 2);
         &::before {
           transition: 0.5s;
           position: absolute;
@@ -96,11 +98,11 @@
           }
         }
         &-title {
-          text-align: center;
+          @include text-center;
           margin: 0 0 8px;
         }
         &-descript {
-          text-align: center;
+          @include text-center;
         }
       }
     }

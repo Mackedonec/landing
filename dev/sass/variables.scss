@@ -27,3 +27,17 @@ $gap-lg: 45px;
   padding: $p;
   list-style: none;
 }
+@mixin visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@mixin text-center {
+  text-align: center;
+}

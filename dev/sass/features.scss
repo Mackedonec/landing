@@ -5,11 +5,11 @@
   background-color: #e5e5e5;
   .container {
     .features-title {
-      text-align: center;
+      @include text-center;
       margin-bottom: $gap-lg;
     }
     .features-descript {
-      text-align: center;
+      @include text-center;
       margin-bottom: $gap-lg;
     }
 
@@ -17,6 +17,7 @@
       &-img {
         .fas,
         .fab {
+          transition: 0.5s;
           display: flex;
           width: 80px;
           height: 90px;
@@ -36,12 +37,20 @@
           );
         }
       }
+      &:hover {
+        .fas,
+        .fab {
+          transition: 0.5s;
+          margin-top: calc($gap * 4);
+          margin-bottom: calc($gap * 2);
+        }
+      }
       &-title {
-        text-align: center;
+        @include text-center;
         margin: 0 0 8px;
       }
       &-descript {
-        text-align: center;
+        @include text-center;
       }
     }
   }

@@ -8,11 +8,11 @@
     padding-right: calc($gap * 2);
     padding-left: calc($gap * 2);
     .blog-title {
-      text-align: center;
+      @include text-center;
       margin-bottom: $gap-lg;
     }
     .blog-descript {
-      text-align: center;
+      @include text-center;
       margin-bottom: $gap-lg;
     }
     .blog-item {
