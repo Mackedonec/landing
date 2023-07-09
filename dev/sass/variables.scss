@@ -10,14 +10,20 @@ $white-color: #ffffff;
 $dark-color: #010101;
 $gray-color: #fefefe;
 
-/// size///
+///size///
 $gap: 15px;
 $gap-lg: 45px;
 
+///mixins///
 @mixin abs-position($top: 0, $right: 0, $bottom: 0, $left: 0) {
   position: absolute;
   top: $top;
   right: $right;
   bottom: $bottom;
   left: $left;
+}
+@mixin unlist($m: 0, $p: 0) {
+  margin: $m;
+  padding: $p;
+  list-style: none;
 }

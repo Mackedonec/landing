@@ -12,8 +12,16 @@ window.addEventListener("resize", function () {
   }
 });
 
-window.addEventListener("DOMContentLoaded", function () {
-  updateClasses();
+window.addEventListener("resize", function () {
+  if (window.innerWidth === 575) {
+    location.reload();
+  }
+  if (window.innerWidth === 600) {
+    location.reload();
+  }
+  if (window.innerWidth === 625) {
+    location.reload();
+  }
 });
 
 window.addEventListener("resize", function () {

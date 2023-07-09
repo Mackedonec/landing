@@ -16,7 +16,7 @@
     font-size: 0.85rem;
   }
   .ul {
-    list-style: none;
+    @include unlist;
     .li {
       &::before {
         transition: 0.5s;
