@@ -1,2 +1,52 @@
 @media screen and (max-width: 1199px) {
+  .footer {
+    &__title-one,
+    &__title {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &__descript {
+      padding-left: 35px;
+      padding-right: 15px;
+      text-align: justify;
+    }
+    .ul {
+      padding-left: 55px;
+    }
+  }
+  .advantages {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(assets/img/background.jpg);
+      min-height: 100vh;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffffc9;
+    }
+
+    .container-fluid {
+      position: relative;
+      z-index: 1;
+      padding-top: 90px;
+      padding-bottom: 60px;
+      max-width: 720px;
+    }
+    &__img {
+      display: none;
+    }
+  }
 }

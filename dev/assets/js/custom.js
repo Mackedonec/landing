@@ -12,13 +12,21 @@ window.addEventListener("resize", function () {
   }
 });
 
+window.addEventListener("DOMContentLoaded", function () {
+  updateClasses();
+});
+
 window.addEventListener("resize", function () {
+  updateClasses();
+});
+
+function updateClasses() {
   if (window.innerWidth < 575) {
     addClasses();
   } else {
     removeClasses();
   }
-});
+}
 
 function addClasses() {
   let ulElements = document.getElementsByClassName("ul");
