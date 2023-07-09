@@ -53,7 +53,7 @@ function removeClasses() {
   }
 }
 
-(function ($) {
+$(document).ready(function () {
   let $navbar = $("#header-navbar");
   let $btnBack2Top = $("#back2top");
 
@@ -106,4 +106,4 @@ function removeClasses() {
     easing: "ease-in-sine",
   });
   /* подключение и настрока плагина анимации */
-})(jQuery);
+});
