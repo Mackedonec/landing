@@ -4,8 +4,20 @@ $font-secondary: "Roboto_Slab", serif;
 $font-size: 16px;
 
 ///colors///
-$primary-color: #222;
-$secondary-color: #f00;
+$primary-color: #ee3b24;
+$secondary-color: #b2b2b2;
+$white-color: #ffffff;
+$dark-color: #010101;
+$gray-color: #fefefe;
 
 /// size///
-$pading: 15px;
+$gap: 15px;
+$gap-lg: 45px;
+
+@mixin abs-position($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

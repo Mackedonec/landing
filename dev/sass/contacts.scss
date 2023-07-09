@@ -5,7 +5,7 @@
   &__title,
   &__descript {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: $gap-lg;
   }
   form {
     label {
@@ -15,15 +15,15 @@
     max-width: 720px;
     .form-control {
       transition: 0.5s;
-      padding: 15px;
-      margin: 7.5px auto;
+      padding: $gap;
+      margin: calc($gap / 2) auto;
       border: 2px solid #2d2c2c4f;
       &:hover {
         transition: 0.5s;
-        border: 2px solid #ee3b24;
+        border: 2px solid $primary-color;
         &::placeholder {
           transition: 0.5s;
-          color: #ee3b24;
+          color: $primary-color;
         }
       }
     }
@@ -37,12 +37,12 @@
         padding: 8px 16px;
         margin: 5px auto;
         background-color: transparent;
-        color: #ee3b24;
-        border: 1px solid #ee3b24;
+        color: $primary-color;
+        border: 1px solid $primary-color;
         &:hover {
           transition: 0.5s;
           color: white;
-          background-color: #ee3b24;
+          background-color: $primary-color;
         }
       }
     }

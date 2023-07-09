@@ -14,34 +14,34 @@
     align-content: center;
     flex-wrap: wrap;
     > .row {
-      margin-right: 15px;
-      margin-left: 15px;
+      margin-right: $gap;
+      margin-left: $gap;
     }
   }
   &__title,
   &__descript {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: $gap;
+    padding-right: $gap;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: $gap-lg;
   }
   .advantages-item {
     display: flex;
     &__icon {
-      padding-right: 15px;
+      padding-right: $gap;
       flex-grow: 0;
       i {
-        width: 60px;
-        margin-top: 7.5px;
+        width: calc($gap * 4);
+        margin-top: calc($gap / 2);
         text-align: center;
         font-size: 2.75rem;
-        color: #ee3b24;
+        color: $primary-color;
       }
     }
     &__caption {
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-bottom: 15px;
+      padding-left: $gap;
+      padding-right: $gap;
+      margin-bottom: $gap;
     }
   }
 }

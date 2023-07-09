@@ -1,19 +1,19 @@
 .footer {
   background-color: #343434;
   &__top {
-    padding: 45px 0 30px;
-    color: #b2b2b2;
+    padding: $gap-lg 0 calc($gap * 2);
+    color: $secondary-color;
     background-color: #282828;
   }
   &__title-one,
   &__title {
-    color: #b2b2b2;
+    color: $secondary-color;
     &::first-letter {
-      color: #ee3b24;
+      color: $primary-color;
     }
   }
   &__descript {
-    font-size: 14px;
+    font-size: 0.85rem;
   }
   .ul {
     list-style: none;
@@ -23,26 +23,26 @@
         position: absolute;
         margin-left: -25px;
         content: "\f30b";
-        color: #b2b2b2;
-        font-size: 14px;
+        color: $secondary-color;
+        font-size: 0.85rem;
         font-family: "Font Awesome 5 Free";
         font-weight: 600;
       }
       a {
         transition: 0.5s;
-        font-size: 14px;
-        color: #b2b2b2;
+        font-size: 0.85rem;
+        color: $secondary-color;
         text-decoration: none;
       }
       &:hover {
         &::before {
           transition: 0.5s;
           margin-left: -20px;
-          color: #ee3b24;
+          color: $primary-color;
         }
         a {
           transition: 0.5s;
-          color: #ee3b24;
+          color: $primary-color;
         }
       }
     }
@@ -53,23 +53,23 @@
     }
   }
   &__bottom {
-    color: #b2b2b2;
+    color: $secondary-color;
     text-align: center;
-    padding: 30px 0;
+    padding: calc($gap * 2) 0;
     margin: 0 auto;
   }
   .back2top {
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+    right: $gap;
+    bottom: $gap;
     display: none;
-    width: 45px;
-    height: 45px;
+    width: $gap-lg;
+    height: $gap-lg;
     transition: 0.5s;
     opacity: 0.2;
     border-bottom: none;
     border-radius: 4px;
-    background-color: #010101;
+    background-color: $dark-color;
     i {
       position: absolute;
       top: 50%;
@@ -78,13 +78,13 @@
       &.fas {
         font-size: 1.5rem;
         font-weight: 900;
-        color: #ffffff;
+        color: $white-color;
       }
     }
     &:hover {
       transition: 0.5s;
       opacity: 0.9;
-      background-color: #ee3b24;
+      background-color: $primary-color;
       i {
         top: 40%;
       }

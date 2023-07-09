@@ -2,12 +2,12 @@
   .footer {
     &__title-one,
     &__title {
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: $gap;
+      padding-right: $gap;
     }
     &__descript {
       padding-left: 35px;
-      padding-right: 15px;
+      padding-right: $gap;
       text-align: justify;
     }
     .ul {
@@ -42,7 +42,7 @@
       position: relative;
       z-index: 1;
       padding-top: 90px;
-      padding-bottom: 60px;
+      padding-bottom: calc($gap * 4);
       max-width: 720px;
     }
     &__img {

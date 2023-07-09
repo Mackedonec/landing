@@ -1,61 +1,57 @@
 .home {
-	.carousel {
-		.carousel-inner {
-			.carousel-item {
-				height: 100vh;
-				position: relative;
-				background-position: 50% 50%;
-				background-size: cover;
-				&:nth-of-type(1) {
-					background-image: url(assets/img/slide1.jpg);
-					&::before {
-						opacity: 0.69;
-					}
-				}
-				&:nth-of-type(2) {
-					background-image: url(assets/img/slide2.jpg);
-					&::before {
-						opacity: 0.2;
-					}
-				}
-				&:nth-of-type(3) {
-					background-image: url(assets/img/slide3.jpg);
-					&::before {
-						opacity: 0.2;
-					}
-				}
-				&:nth-of-type(4) {
-					background-image: url(assets/img/slide4.jpg);
-					&::before {
-						opacity: 0.3;
-					}
-				}
-				&::before {
-					content: "";
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					right: 0;
-					left: 0;
-					background-color: #000000;
-					z-index: 0;
-				}
-				.carousel-caption {
-					h5 {
-						color: #fefefe;
-						font-size: 1.75rem;
-						font-weight: 400;
-						line-height: 1.2;
-					}
-				}
-			}
-		}
-		.carousel-control-next,
-		.carousel-control-prev {
-			top: 40%;
-			bottom: 40%;
-			width: 15%;
-			height: 20%;
-		}
-	}
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        height: 100vh;
+        position: relative;
+        background-position: 50% 50%;
+        background-size: cover;
+        &:nth-of-type(1) {
+          background-image: url(assets/img/slide1.jpg);
+          &::before {
+            opacity: 0.69;
+          }
+        }
+        &:nth-of-type(2) {
+          background-image: url(assets/img/slide2.jpg);
+          &::before {
+            opacity: 0.2;
+          }
+        }
+        &:nth-of-type(3) {
+          background-image: url(assets/img/slide3.jpg);
+          &::before {
+            opacity: 0.2;
+          }
+        }
+        &:nth-of-type(4) {
+          background-image: url(assets/img/slide4.jpg);
+          &::before {
+            opacity: 0.3;
+          }
+        }
+        &::before {
+          content: "";
+          @include abs-position;
+          background-color: #000000;
+          z-index: 0;
+        }
+        .carousel-caption {
+          h5 {
+            color: $gray-color;
+            font-size: 1.75rem;
+            font-weight: 400;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      top: 40%;
+      bottom: 40%;
+      width: 15%;
+      height: 20%;
+    }
+  }
 }

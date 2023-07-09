@@ -11,7 +11,7 @@
   }
   .footer {
     &__top {
-      padding: 45px 0 30px;
+      padding: $gap-lg 0 calc($gap * 2);
     }
     &__title-one {
       text-align: center;
@@ -29,10 +29,10 @@
         background-color: #282828;
       }
       .footer__titles {
-        font-size: 20px;
-        color: #b2b2b2;
+        font-size: 1.25rem;
+        color: $secondary-color;
         > span {
-          color: #ee3b24;
+          color: $primary-color;
         }
       }
     }
@@ -47,15 +47,15 @@
           position: absolute;
           margin-left: -25px;
           content: "\f30b";
-          color: #b2b2b2;
-          font-size: 14px;
+          color: $secondary-color;
+          font-size: 0.85rem;
           font-family: "Font Awesome 5 Free";
           font-weight: 600;
         }
         a {
           transition: 0.5s;
-          font-size: 14px;
-          color: #b2b2b2;
+          font-size: 0.85rem;
+          color: $secondary-color;
           text-decoration: none;
         }
         &:hover {
@@ -63,11 +63,11 @@
           &::before {
             transition: 0.5s;
             margin-left: -20px;
-            color: #ee3b24;
+            color: $primary-color;
           }
           a {
             transition: 0.5s;
-            color: #ee3b24;
+            color: $primary-color;
           }
         }
       }
@@ -78,7 +78,7 @@
       }
     }
     &__descript {
-      font-size: 14px;
+      font-size: 0.85rem;
     }
   }
   .advantages {
@@ -92,7 +92,7 @@
         &-img {
           .fas,
           .fab {
-            margin: 10px auto 30px;
+            margin: 10px auto calc($gap * 2);
           }
         }
         &-title {

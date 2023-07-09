@@ -5,7 +5,7 @@
   .features {
     .container {
       padding-top: 90px;
-      padding-bottom: 60px;
+      padding-bottom: calc($gap * 4);
       max-width: 720px;
     }
   }
@@ -13,8 +13,8 @@
     .navbar-expand-lg {
       .nav-item {
         .nav-link {
-          padding-top: calc($pading / 3);
-          padding-bottom: calc($pading / 3);
+          padding-top: calc($gap / 3);
+          padding-bottom: calc($gap / 3);
         }
         &.active {
           .nav-link {
@@ -48,9 +48,9 @@
         .progress {
           max-width: 455px;
           height: 20px;
-          margin-bottom: 30px;
+          margin-bottom: calc($gap * 2);
           .progress-bar {
-            background-color: #ee3b24;
+            background-color: $primary-color;
           }
         }
       }
