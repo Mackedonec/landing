@@ -24,7 +24,6 @@ header {
       padding-left: calc($gap / 2);
       padding-right: calc($gap / 2);
       .nav-link {
-        transition: 2s;
         position: relative;
         overflow: hidden;
         color: $white-color;
@@ -39,8 +38,8 @@ header {
           content: "";
           position: absolute;
           bottom: 0;
-          height: 5px;
           left: 0;
+          height: 0;
           width: 100%;
           opacity: 0;
           background-color: $primary-color;
@@ -53,6 +52,7 @@ header {
               height: 3px;
               opacity: 1;
               bottom: 10px;
+              background-color: white;
             }
           }
         }
@@ -62,10 +62,10 @@ header {
           color: $primary-color;
           text-shadow: 0 0 1px $primary-color;
           &::before {
-            transition: opacity 2s;
             height: 3px;
             opacity: 1;
             bottom: 10px;
+            background-color: $primary-color;
           }
         }
       }

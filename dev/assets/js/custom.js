@@ -93,7 +93,7 @@ function removeClasses() {
   /* подключение и настройка внутристраничной навигации */
   $navbar.onePageNav({
     currentClass: "active",
-    scrollSpeed: 150,
+    scrollSpeed: 0,
     easing: "swing",
     filter: ":not(.navbar-brand)",
   });
