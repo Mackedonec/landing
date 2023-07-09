@@ -104,6 +104,13 @@
         &-descript {
           @include text-center;
         }
+        &:hover {
+          .fas,
+          .fab {
+            transform: translate(0, 15%);
+            margin: 10px auto calc($gap * 2);
+          }
+        }
       }
     }
   }
