@@ -61,6 +61,7 @@
     margin: 0 auto;
   }
   .back2top {
+    z-index: 2;
     position: fixed;
     right: $gap;
     bottom: $gap;
